@@ -20,45 +20,53 @@
       class="relative flex h-max min-h-[20rem] w-full min-w-[20rem] flex-col items-center gap-6 overflow-x-hidden pb-20 pt-10 font-ibm-plex text-main"
     >
       <header
-        class="after-bg-image after:bg-mobile w-11/12 after:-left-4 after:-top-60"
+        class="after-bg-image tablet:after:bg-tablet tablet:after:-left-[32rem] tablet:after:-top-36 w-11/12 after:-left-4 after:-top-60 after:bg-mobile"
       >
-        <h1 class="relative z-10 text-3xl font-bold">equalizer</h1>
+        <h1
+          class="tablet:before-bg-image tablet:before:bg-pattern-one tablet:before:w-screen tablet:before:h-screen tablet:before:max-w-[19rem] tablet:before:-right-20 tablet:before:-top-[53rem] tablet:before:min-h-[125rem] relative z-10 text-3xl font-bold"
+        >
+          equalizer
+        </h1>
       </header>
-      <main class="relative z-10 mt-6 w-full">
-        <section class="flex w-full flex-col items-center gap-40">
+      <main class="tablet:mt-28 relative z-10 mt-6 w-full">
+        <section class="tablet:gap-60 flex w-full flex-col items-center gap-40">
           <div class="flex w-11/12 flex-col gap-5">
-            <h2 class="text-4xl font-bold">
+            <h2
+              class="tablet:text-tablet desktop:text-desktop tablet:max-w-[36.5rem] text-4xl font-bold"
+            >
               We make your music sound extraordinary.
             </h2>
-            <p class="text-base">
+            <p class="tablet:text-lg tablet:max-w-[36.5rem] text-base">
               A system audio equalizer specifically designed for Android and
               iOS. Freely tune the way your music sounds with a professional
               grade parametric EQ & volume mixer. Control bass, mids, treble,
               gain control, reverb, and more!
             </p>
           </div>
-          <div class="rounded-b-xl">
+          <div
+            class="tablet:h-[50rem] tablet:max-w-[44rem] w-11/12 rounded-b-xl"
+          >
             <figure
-              class="before-bg-image before:bg-pattern-two relative w-full rounded-t-xl bg-main"
+              class="before-bg-image tablet:before:w-[70%] tablet:before:h-[70%] tablet:rounded-b-xl relative flex w-full flex-col items-center justify-start rounded-t-xl bg-main before:bg-pattern-two"
             >
               <img
                 src="/src/assets/images/png/illustration-app.png"
                 alt="Reference image about phone with equalizer and volume"
-                class="relative -top-24 m-auto w-1/2"
+                class="tablet:-top-36 tablet:-left-40 tablet:w-2/5 relative -top-24 m-auto w-1/2"
               />
             </figure>
             <article
-              class="bg-buy-card relative -top-10 flex flex-col gap-8 rounded-xl px-9 py-12"
+              class="tablet:max-w-[25rem] tablet:left-60 tablet:-top-96 relative -top-10 flex w-full flex-col gap-8 rounded-xl bg-buy-card px-9 py-12"
             >
               <div class="flex flex-col gap-3">
                 <h3 class="text-3xl font-bold text-secondary">Premium EQ</h3>
-                <p class="text-[1.125rem] text-secondary">
+                <p class="tablet:text-lg text-base text-secondary">
                   Get expert-level control with a robust equalizer, volume
                   mixer, and spatial audio. Take your listening experience to a
                   whole new level and access all our incredible features!
                 </p>
               </div>
-              <p>
+              <p class="flex items-center gap-4">
                 <span class="text-6xl font-bold text-secondary">$4</span
                 ><span class="text-[1.125rem] text-secondary">/ month</span>
               </p>
@@ -67,7 +75,7 @@
                   href="/"
                   class="flex justify-center gap-2 rounded-xl bg-main px-14 py-4 text-secondary"
                   ><span
-                    class="bg-icon-ios inline-block h-5 w-5 bg-cover bg-center bg-no-repeat"
+                    class="inline-block h-5 w-5 bg-icon-ios bg-cover bg-center bg-no-repeat"
                   ></span
                   >iOS Download</a
                 >
@@ -75,7 +83,7 @@
                   href="/"
                   class="flex justify-center gap-2 rounded-xl bg-secondary px-10 py-4 text-main"
                   ><span
-                    class="bg-icon-android inline-block h-5 w-5 bg-cover bg-center bg-no-repeat"
+                    class="inline-block h-5 w-5 bg-icon-android bg-cover bg-center bg-no-repeat"
                   ></span
                   >Android Download</a
                 >
@@ -84,17 +92,25 @@
           </div>
         </section>
       </main>
-      <footer class="flex w-11/12 flex-col gap-8">
-        <p class="text-3xl font-bold">equalizer</p>
-        <small class="text-base">
-          All rights reserved © Equalizer
-          <time datetime="2021">2021</time> Have any problems? Contact us via
-          social media or email us at
-          <address class="mt-1">
-            <a href="/" class="font-bold not-italic">equalizer@example.com</a>
-          </address>
-        </small>
-        <ul class="mt-8 flex gap-6 text-3xl">
+      <footer
+        class="tablet:flex-row tablet:items-center flex w-11/12 flex-col justify-between"
+      >
+        <div class="tablet:w-3/4 flex max-w-[25rem] flex-col gap-8">
+          <p class="text-3xl font-bold">equalizer</p>
+          <small class="flex flex-col text-base">
+            <span>
+              All rights reserved © Equalizer
+              <time datetime="2021">2021</time>
+            </span>
+            Have any problems? Contact us via social media or email us at
+            <address class="mt-1">
+              <a href="/" class="font-bold not-italic">equalizer@example.com</a>
+            </address>
+          </small>
+        </div>
+        <ul
+          class="tablet:w-max tablet:mt-0 tablet:justify-center mt-8 flex gap-6 text-3xl"
+        >
           <li>
             <a href="/" aria-label="Facebook icon"
               ><i class="bx bxl-facebook-square"></i
