@@ -15,15 +15,15 @@
     />
     <link rel="stylesheet" href="/dist/output.css" />
   </head>
-  <body>
+  <body class="flex flex-col items-center">
     <div
-      class="relative flex h-max min-h-[20rem] w-full min-w-[20rem] flex-col items-center gap-6 overflow-x-hidden pb-20 pt-10 font-ibm-plex text-main"
+      class="relative flex h-max min-h-[20rem] w-full min-w-[20rem] max-w-[90rem] flex-col items-center gap-6 overflow-x-hidden pb-20 pt-10 font-ibm-plex text-main"
     >
       <header
-        class="after-bg-image tablet:after:bg-tablet tablet:after:-left-[32rem] tablet:after:-top-36 w-11/12 after:-left-4 after:-top-60 after:bg-mobile"
+        class="after-bg-image tablet:after:bg-tablet tablet:after:-left-[32rem] tablet:after:-top-36 desktop:after:bg-desktop desktop:after:-top-56 desktop:after:-left-[55rem] desktop:after:max-h-[115rem] w-11/12 after:-left-4 after:-top-60 after:bg-mobile"
       >
         <h1
-          class="tablet:before-bg-image tablet:before:bg-pattern-one tablet:before:w-screen tablet:before:h-screen tablet:before:max-w-[19rem] tablet:before:-right-20 tablet:before:-top-[53rem] tablet:before:min-h-[125rem] relative z-10 text-3xl font-bold"
+          class="tablet:before-bg-image tablet:before:bg-pattern-one tablet:before:w-screen tablet:before:h-screen tablet:before:max-w-[19rem] tablet:before:-right-20 tablet:before:-top-[53rem] tablet:before:min-h-[125rem] desktop:before:max-w-[23rem] relative z-10 text-3xl font-bold"
         >
           equalizer
         </h1>
@@ -32,11 +32,13 @@
         <section class="tablet:gap-60 flex w-full flex-col items-center gap-40">
           <div class="flex w-11/12 flex-col gap-5">
             <h2
-              class="tablet:text-tablet desktop:text-desktop tablet:max-w-[36.5rem] text-4xl font-bold"
+              class="tablet:text-tablet desktop:text-desktop tablet:max-w-[36.5rem] desktop:max-w-[60rem] text-4xl font-bold"
             >
               We make your music sound extraordinary.
             </h2>
-            <p class="tablet:text-lg tablet:max-w-[36.5rem] text-base">
+            <p
+              class="tablet:text-lg tablet:max-w-[36.5rem] desktop:text-xl desktop:max-w-[52rem] text-base"
+            >
               A system audio equalizer specifically designed for Android and
               iOS. Freely tune the way your music sounds with a professional
               grade parametric EQ & volume mixer. Control bass, mids, treble,
@@ -44,19 +46,19 @@
             </p>
           </div>
           <div
-            class="tablet:h-[50rem] tablet:max-w-[44rem] w-11/12 rounded-b-xl"
+            class="tablet:h-[50rem] tablet:max-w-[44rem] desktop:max-w-[69rem] w-11/12 rounded-b-xl"
           >
             <figure
-              class="before-bg-image tablet:before:w-[70%] tablet:before:h-[70%] tablet:rounded-b-xl relative flex w-full flex-col items-center justify-start rounded-t-xl bg-main before:bg-pattern-two"
+              class="before-bg-image tablet:before:w-[70%] tablet:before:h-[70%] tablet:rounded-b-xl desktop:max-w-[68.75rem] desktop:max-h-[37.5rem] relative flex w-full flex-col items-center justify-start rounded-t-xl bg-main before:bg-pattern-two"
             >
               <img
                 src="/src/assets/images/png/illustration-app.png"
                 alt="Reference image about phone with equalizer and volume"
-                class="tablet:-top-36 tablet:-left-40 tablet:w-2/5 relative -top-24 m-auto w-1/2"
+                class="tablet:-top-36 tablet:-left-40 tablet:w-2/5 desktop:max-w-[20rem] desktop:-left-56 relative -top-24 m-auto w-1/2"
               />
             </figure>
             <article
-              class="tablet:max-w-[25rem] tablet:left-60 tablet:-top-96 relative -top-10 flex w-full flex-col gap-8 rounded-xl bg-buy-card px-9 py-12"
+              class="tablet:max-w-[25rem] desktop:left-[39rem] desktop:-top-[30rem] tablet:left-60 tablet:-top-96 relative -top-10 flex w-full flex-col gap-8 rounded-xl bg-buy-card px-9 py-12"
             >
               <div class="flex flex-col gap-3">
                 <h3 class="text-3xl font-bold text-secondary">Premium EQ</h3>
@@ -95,14 +97,18 @@
       <footer
         class="tablet:flex-row tablet:items-center flex w-11/12 flex-col justify-between"
       >
-        <div class="tablet:w-3/4 flex max-w-[25rem] flex-col gap-8">
+        <div
+          class="tablet:w-3/4 desktop:flex-row desktop:max-w-[35rem] flex max-w-[25rem] flex-col gap-8"
+        >
           <p class="text-3xl font-bold">equalizer</p>
           <small class="flex flex-col text-base">
-            <span>
-              All rights reserved © Equalizer
-              <time datetime="2021">2021</time>
-            </span>
-            Have any problems? Contact us via social media or email us at
+            <div>
+              <span>
+                All rights reserved © Equalizer
+                <time datetime="2021">2021</time>
+              </span>
+              Have any problems? Contact us via social media or email us at
+            </div>
             <address class="mt-1">
               <a href="/" class="font-bold not-italic">equalizer@example.com</a>
             </address>

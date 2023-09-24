@@ -14,6 +14,7 @@ module.exports = {
       backgroundImage: {
         mobile: "url('/src/assets/images/png/bg-main-mobile.png')",
         tablet: "url('/src/assets/images/png/bg-main-tablet.png')",
+        desktop: "url('/src/assets/images/png/bg-main-desktop.png')",
         "pattern-one": "url('/src/assets/images/svg/bg-pattern-1.svg')",
         "pattern-two": "url('/src/assets/images/svg/bg-pattern-2.svg')",
         "icon-ios": "url('/src/assets/images/svg/icon-apple.svg')",
