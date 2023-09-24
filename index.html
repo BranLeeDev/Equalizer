@@ -20,24 +20,24 @@
       class="relative flex h-max min-h-[20rem] w-full min-w-[20rem] max-w-[90rem] flex-col items-center gap-6 overflow-x-hidden pb-20 pt-10 font-ibm-plex text-main"
     >
       <header
-        class="after-bg-image tablet:after:bg-tablet tablet:after:-left-[32rem] tablet:after:-top-36 desktop:after:bg-desktop desktop:after:-top-56 desktop:after:-left-[55rem] desktop:after:max-h-[115rem] w-11/12 after:-left-4 after:-top-60 after:bg-mobile"
+        class="after-bg-image w-11/12 after:-left-4 after:-top-60 after:bg-mobile tablet:after:-left-[32rem] tablet:after:-top-36 tablet:after:bg-tablet desktop:after:-left-[55rem] desktop:after:-top-56 desktop:after:max-h-[115rem] desktop:after:bg-desktop"
       >
         <h1
-          class="tablet:before-bg-image tablet:before:bg-pattern-one tablet:before:w-screen tablet:before:h-screen tablet:before:max-w-[19rem] tablet:before:-right-20 tablet:before:-top-[53rem] tablet:before:min-h-[125rem] desktop:before:max-w-[23rem] relative z-10 text-3xl font-bold"
+          class="tablet:before-bg-image relative z-10 text-3xl font-bold tablet:before:-right-20 tablet:before:-top-[53rem] tablet:before:h-screen tablet:before:min-h-[125rem] tablet:before:w-screen tablet:before:max-w-[19rem] tablet:before:bg-pattern-one desktop:before:max-w-[23rem]"
         >
           equalizer
         </h1>
       </header>
-      <main class="tablet:mt-28 relative z-10 mt-6 w-full">
-        <section class="tablet:gap-60 flex w-full flex-col items-center gap-40">
+      <main class="relative z-10 mt-6 w-full tablet:mt-28">
+        <section class="flex w-full flex-col items-center gap-40 tablet:gap-60">
           <div class="flex w-11/12 flex-col gap-5">
             <h2
-              class="tablet:text-tablet desktop:text-desktop tablet:max-w-[36.5rem] desktop:max-w-[60rem] text-4xl font-bold"
+              class="text-4xl font-bold tablet:max-w-[36.5rem] tablet:text-tablet desktop:max-w-[60rem] desktop:text-desktop"
             >
               We make your music sound extraordinary.
             </h2>
             <p
-              class="tablet:text-lg tablet:max-w-[36.5rem] desktop:text-xl desktop:max-w-[52rem] text-base"
+              class="text-base tablet:max-w-[36.5rem] tablet:text-lg desktop:max-w-[52rem] desktop:text-xl"
             >
               A system audio equalizer specifically designed for Android and
               iOS. Freely tune the way your music sounds with a professional
@@ -46,23 +46,23 @@
             </p>
           </div>
           <div
-            class="tablet:h-[50rem] tablet:max-w-[44rem] desktop:max-w-[69rem] w-11/12 rounded-b-xl"
+            class="w-11/12 rounded-b-xl tablet:h-[50rem] tablet:max-w-[44rem] desktop:max-w-[69rem]"
           >
             <figure
-              class="before-bg-image tablet:before:w-[70%] tablet:before:h-[70%] tablet:rounded-b-xl desktop:max-w-[68.75rem] desktop:max-h-[37.5rem] relative flex w-full flex-col items-center justify-start rounded-t-xl bg-main before:bg-pattern-two"
+              class="before-bg-image relative flex w-full flex-col items-center justify-start rounded-t-xl bg-main before:bg-pattern-two tablet:rounded-b-xl tablet:before:h-[70%] tablet:before:w-[70%] desktop:max-h-[37.5rem] desktop:max-w-[68.75rem]"
             >
               <img
                 src="/src/assets/images/png/illustration-app.png"
                 alt="Reference image about phone with equalizer and volume"
-                class="tablet:-top-36 tablet:-left-40 tablet:w-2/5 desktop:max-w-[20rem] desktop:-left-56 relative -top-24 m-auto w-1/2"
+                class="relative -top-24 m-auto w-1/2 tablet:-left-40 tablet:-top-36 tablet:w-2/5 desktop:-left-56 desktop:max-w-[20rem]"
               />
             </figure>
             <article
-              class="tablet:max-w-[25rem] desktop:left-[39rem] desktop:-top-[30rem] tablet:left-60 tablet:-top-96 relative -top-10 flex w-full flex-col gap-8 rounded-xl bg-buy-card px-9 py-12"
+              class="relative -top-10 flex w-full flex-col gap-8 rounded-xl bg-buy-card px-9 py-12 tablet:-top-96 tablet:left-60 tablet:max-w-[25rem] desktop:-top-[30rem] desktop:left-[39rem]"
             >
               <div class="flex flex-col gap-3">
                 <h3 class="text-3xl font-bold text-secondary">Premium EQ</h3>
-                <p class="tablet:text-lg text-base text-secondary">
+                <p class="text-base text-secondary tablet:text-lg">
                   Get expert-level control with a robust equalizer, volume
                   mixer, and spatial audio. Take your listening experience to a
                   whole new level and access all our incredible features!
@@ -75,7 +75,7 @@
               <div class="flex flex-col gap-4">
                 <a
                   href="/"
-                  class="flex justify-center gap-2 rounded-xl bg-main px-14 py-4 text-secondary transition-colors duration-300 ease-in-out hover:bg-[#66E2DC]"
+                  class="flex justify-center gap-2 rounded-xl bg-main px-[2.9rem] py-4 text-secondary transition-colors duration-300 ease-in-out hover:bg-[#66E2DC] tablet:px-14"
                   ><span
                     class="inline-block h-5 w-5 bg-icon-ios bg-cover bg-center bg-no-repeat"
                   ></span
@@ -83,7 +83,7 @@
                 >
                 <a
                   href="/"
-                  class="flex justify-center gap-2 rounded-xl bg-secondary px-10 py-4 text-main transition-colors duration-300 ease-in-out hover:bg-[#FFB964]"
+                  class="flex justify-center gap-2 rounded-xl bg-secondary px-[1.9rem] py-4 text-main transition-colors duration-300 ease-in-out hover:bg-[#FFB964] tablet:px-10"
                   ><span
                     class="inline-block h-5 w-5 bg-icon-android bg-cover bg-center bg-no-repeat"
                   ></span
@@ -95,27 +95,32 @@
         </section>
       </main>
       <footer
-        class="tablet:flex-row tablet:items-center flex w-11/12 flex-col justify-between"
+        class="flex w-11/12 flex-col justify-between tablet:flex-row tablet:items-center"
       >
         <div
-          class="tablet:w-3/4 desktop:flex-row desktop:max-w-[35rem] flex max-w-[25rem] flex-col gap-8"
+          class="flex max-w-[25rem] flex-col gap-8 tablet:w-3/4 desktop:max-w-[35rem] desktop:flex-row"
         >
           <p class="text-3xl font-bold">equalizer</p>
-          <small class="flex flex-col text-base">
+          <div class="flex flex-col">
             <div>
-              <span>
-                All rights reserved © Equalizer
+              <span class="text-base">
+                <small class="text-base"
+                  >All rights reserved © Equalizer</small
+                >
                 <time datetime="2021">2021</time>
               </span>
-              Have any problems? Contact us via social media or email us at
+              <small class="text-base"
+                >Have any problems? Contact us via social media or email us
+                at</small
+              >
             </div>
-            <address class="mt-1">
+            <address class="mt-1 text-base">
               <a href="/" class="font-bold not-italic">equalizer@example.com</a>
             </address>
-          </small>
+          </div>
         </div>
         <ul
-          class="tablet:w-max tablet:mt-0 tablet:justify-center relative z-10 mt-8 flex gap-6 text-3xl"
+          class="relative z-10 mt-8 flex gap-6 text-3xl tablet:mt-0 tablet:w-max tablet:justify-center"
         >
           <li>
             <a
