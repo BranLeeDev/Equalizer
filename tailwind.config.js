@@ -2,7 +2,15 @@
 module.exports = {
   content: ["index.html"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        main: "#191826",
+        secondary: "#FCFAF9",
+      },
+      fontFamily: {
+        "ibm-plex": ["IBM Plex Sans", "sans-serif"],
+      },
+    },
   },
   plugins: [],
 };
