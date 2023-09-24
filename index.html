@@ -17,62 +17,98 @@
   </head>
   <body>
     <div
-      class="flex h-screen min-h-[20rem] w-full min-w-[20rem] flex-col items-center font-ibm-plex text-main"
+      class="relative flex h-max min-h-[20rem] w-full min-w-[20rem] flex-col items-center gap-6 overflow-x-hidden pb-20 pt-10 font-ibm-plex text-main"
     >
-      <header class="w-11/12">
-        <h1 class="text-3xl font-bold">equalizer</h1>
+      <header
+        class="after-bg-image after:bg-mobile w-11/12 after:-left-4 after:-top-60"
+      >
+        <h1 class="relative z-10 text-3xl font-bold">equalizer</h1>
       </header>
-      <main>
-        <section>
-          <h2 class="text-4xl font-bold">
-            We make your music sound extraordinary.
-          </h2>
-          <p class="text-base">
-            A system audio equalizer specifically designed for Android and iOS.
-            Freely tune the way your music sounds with a professional grade
-            parametric EQ & volume mixer. Control bass, mids, treble, gain
-            control, reverb, and more!
-          </p>
-          <figure>
-            <img
-              src="/src/assets/images/png/illustration-app.png"
-              alt="Reference image about phone with equalizer and volume"
-            />
-          </figure>
-          <article>
-            <h3>Premium EQ</h3>
-            <p>
-              Get expert-level control with a robust equalizer, volume mixer,
-              and spatial audio. Take your listening experience to a whole new
-              level and access all our incredible features!
+      <main class="relative z-10 mt-6 w-full">
+        <section class="flex w-full flex-col items-center gap-40">
+          <div class="flex w-11/12 flex-col gap-5">
+            <h2 class="text-4xl font-bold">
+              We make your music sound extraordinary.
+            </h2>
+            <p class="text-base">
+              A system audio equalizer specifically designed for Android and
+              iOS. Freely tune the way your music sounds with a professional
+              grade parametric EQ & volume mixer. Control bass, mids, treble,
+              gain control, reverb, and more!
             </p>
-            <p><span>$4</span><span>/ month</span></p>
-            <div>
-              <a href="/"><span></span>iOS Download</a>
-              <a href="/"><span></span>Android Download</a>
-            </div>
-          </article>
+          </div>
+          <div class="rounded-b-xl">
+            <figure
+              class="before-bg-image before:bg-pattern-two relative w-full rounded-t-xl bg-main"
+            >
+              <img
+                src="/src/assets/images/png/illustration-app.png"
+                alt="Reference image about phone with equalizer and volume"
+                class="relative -top-24 m-auto w-1/2"
+              />
+            </figure>
+            <article
+              class="bg-buy-card relative -top-10 flex flex-col gap-8 rounded-xl px-9 py-12"
+            >
+              <div class="flex flex-col gap-3">
+                <h3 class="text-3xl font-bold text-secondary">Premium EQ</h3>
+                <p class="text-[1.125rem] text-secondary">
+                  Get expert-level control with a robust equalizer, volume
+                  mixer, and spatial audio. Take your listening experience to a
+                  whole new level and access all our incredible features!
+                </p>
+              </div>
+              <p>
+                <span class="text-6xl font-bold text-secondary">$4</span
+                ><span class="text-[1.125rem] text-secondary">/ month</span>
+              </p>
+              <div class="flex flex-col gap-4">
+                <a
+                  href="/"
+                  class="flex justify-center gap-2 rounded-xl bg-main px-14 py-4 text-secondary"
+                  ><span
+                    class="bg-icon-ios inline-block h-5 w-5 bg-cover bg-center bg-no-repeat"
+                  ></span
+                  >iOS Download</a
+                >
+                <a
+                  href="/"
+                  class="flex justify-center gap-2 rounded-xl bg-secondary px-10 py-4 text-main"
+                  ><span
+                    class="bg-icon-android inline-block h-5 w-5 bg-cover bg-center bg-no-repeat"
+                  ></span
+                  >Android Download</a
+                >
+              </div>
+            </article>
+          </div>
         </section>
       </main>
-      <footer>
-        <p>equalizer</p>
-        <small>
+      <footer class="flex w-11/12 flex-col gap-8">
+        <p class="text-3xl font-bold">equalizer</p>
+        <small class="text-base">
           All rights reserved © Equalizer
           <time datetime="2021">2021</time> Have any problems? Contact us via
           social media or email us at
-          <address>
-            <a href="/">equalizer@example.com</a>
+          <address class="mt-1">
+            <a href="/" class="font-bold not-italic">equalizer@example.com</a>
           </address>
         </small>
-        <ul class="">
+        <ul class="mt-8 flex gap-6 text-3xl">
           <li>
-            <a href="/"><i class="bx bxl-facebook-square"></i></a>
+            <a href="/" aria-label="Facebook icon"
+              ><i class="bx bxl-facebook-square"></i
+            ></a>
           </li>
           <li>
-            <a href="/"><i class="bx bxl-instagram"></i></a>
+            <a href="/" aria-label="Instagram icon"
+              ><i class="bx bxl-instagram"></i
+            ></a>
           </li>
           <li>
-            <a href="/"><i class="bx bxl-twitter"></i></a>
+            <a href="/" aria-label="Twitter icon"
+              ><i class="bx bxl-twitter"></i
+            ></a>
           </li>
         </ul>
       </footer>
